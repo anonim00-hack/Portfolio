@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio | Fullstack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Orbitron:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <header id="header">
+        <div class="container header-content">
+            <a id="logo" href="#" style="display: flex; align-items: center; text-decoration: none;">
+                <div class="logo-icon">ST</div>
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#projects">Проекты</a>
+                <a href="#skills">Скиллы</a>
+                <a href="#" class="btn-contact">Контакт</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-titles">
+                <h1 class="heroT">Fullstack <span class="gradient-text">Developer</span><br>Backend & Frontend</h1>
+                <h1 class="heroT">35 years old<br><span class="gradient-text">Commercial experience</span></h1>
+                <h1 class="heroT">Node.js & TypeScript<br><span class="gradient-text">Production ready</span></h1>
+                <h1 class="heroT">Linux, APIs, UI<br><span class="gradient-text">Clean code</span></h1>
+            </div>
+
+            <div class="books-container">
+                <div class="book"><img src="img/main.jpg" alt="Project 1"></div>
+                <div class="book"><img src="img/main2.jpg" alt="Project 2"></div>
+                <div class="book"><img src="img/main3.jpg" alt="Project 3"></div>
+                <div class="book"><img src="img/main4.jpg" alt="Project 4"></div>
+            </div>
+
+            <div class="project-info">
+                <span class="project-category">Fullstack Developer</span>
+                <h2 class="project-name">Creative System Architect</h2>
+            </div>
+        </section>
+
+        <section class="bento-section" id="skills">
+            <div class="container">
+                <div class="section-label">Capabilities & Stack</div>
+                <div class="skills-grid">
+                    <div class="bento-item large frontend-bento">
+                        <h3 class="bento-title">Frontend Development</h3>
+                        <hr class="lineMY">
+                        <div class="bento-mode">
+                            <span class="mode-label">MODE</span>
+                            <span class="mode-value">IDLE</span>
+                        </div>
+                        <p class="bento-desc">Архитектура интерфейсов, логика состояний и масштабируемый UI.</p>
+                        <div class="stack-list">
+                            <span class="tech">HTML</span><span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span><span class="tech">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="bento-item small">
+                        <h3>Backend</h3>
+                        <hr class="lineMY">
+                        <span class="tag">Server-side</span>
+                        <p>REST API, базы данных и высоконагруженные решения.</p>
+                        <div class="stack-list">
+                            <span>Node.js</span><span>Java</span><span>Python</span>
+                        </div>
+                    </div>
+                    <div class="bento-item small">
+                        <h3>Linux</h3>
+                        <hr class="lineMY">
+                        <p>Настройка серверов, деплой и автоматизация процессов.</p>
+                        <div class="stack-list">
+                            <span>Bash</span><span>Docker</span><span>Nginx</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manifest">
+            <div class="container">
+                <h2 class="manifest-title">I build <span class="gradient-text">real systems</span>, not just websites
+                </h2>
+                <div class="manifest-stats">
+                    <div><span>10+</span>
+                        <p>Technologies</p>
+                    </div>
+                    <div><span>Backend</span>
+                        <p>Core focus</p>
+                    </div>
+                    <div><span>Linux</span>
+                        <p>Daily work</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="tech-stack-widget">
+            <a href="#hero" class="tech-item" data-tech="Node.js">Main</a>
+            <div class="tech-item" data-tech="TypeScript">TS</div>
+            <div class="tech-item" data-tech="Docker">DK</div>
+            <div class="tech-item" data-tech="Linux">LX</div>
+            <div class="tech-pill">Stack Info</div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="canvas.js"></script>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
